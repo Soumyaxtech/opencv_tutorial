@@ -16,7 +16,7 @@ while ret:
     ret, frame = video1.read()  # see notes
    
     if ret: 
-        frame = cv2.resize(frame, (800, 600))
+        frame = cv2.resize(frame, (800, 600))   # optional
         cv2.imshow('video',frame)
         cv2.waitKey(40)
         
