@@ -22,6 +22,15 @@ cv2.rectangle(image,(50,50),(100,100),(0,255,0),3)  # upper co , lower co , colo
 cv2.circle(image,(150,70),30,(0,0,255),3)   # center , radius , color , thickness
 
 
+# for triangle ...................................
+
+cv2.line(image,(250,30),(200,80),(0,0,255),2)
+cv2.line(image,(250,30),(300,80),(0,255,0),2)
+cv2.line(image,(200,80),(300,80),(255,0,0),2)
+
+#   how to write text .....................................
+
+cv2.putText(image,'hello',(150,150),cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,255),2)
 
 
 cv2.imshow('frame',image)
